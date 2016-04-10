@@ -5,4 +5,4 @@ This container has default config. In case you need to override it, please mount
 
 Usage:
 
-  docker run -d --restart always --name unbound -p 53:53 -p 53:53/udp kciepluc/unbound-docker
+  docker run -d --restart always --log-driver=journald --name unbound -p 53:53 -p 53:53/udp kciepluc/unbound-docker
